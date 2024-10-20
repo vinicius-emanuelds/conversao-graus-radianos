@@ -1,41 +1,53 @@
 BoxLayout:
     orientation: 'vertical'
-    padding: 10
-    spacing: 10
-
+    padding: [dp(10), dp(20)]
+    spacing: dp(10)
+    
     Label:
         id: menu_label
-        text: "Conversor Graus - Radianos"
-        font_size: 24
+        text: 'Conversor de Graus em Radianos'
+        font_size: '24sp'
+        size_hint_y: None
+        height: dp(40)
         halign: 'center'
-        size_hint_y: None
-        height: 50
-
-    TextInput:
-        id: input_text
-        hint_text: "Digite o ângulo"
-        multiline: False
-        font_size: 20
-        size_hint_y: None
-        height: 40
-
+        valign: 'middle'
+        
     BoxLayout:
+        orientation: 'horizontal'
+        spacing: dp(10)
         size_hint_y: None
-        height: 50
-        spacing: 10
+        height: dp(40)
 
-        Button:
-            text: "Converter para Radianos"
-            on_press: app.opcao1()
+        TextInput:
+            id: input_value
+            hint_text: 'Insira o valor'
+            font_size: '18sp'
+            size_hint: 0.7, None
+            height: dp(40)
 
-        Button:
-            text: "Converter para Graus"
-            on_press: app.opcao2()
-
+        Spinner:
+            id: conversion_type
+            text: 'Escolha a Conversão'
+            values: ['Graus para Radianos', 'Radianos para Graus']
+            size_hint: 0.3, None
+            height: dp(40)
+            font_size: '18sp'
+    
+    Button:
+        text: 'Converter'
+        size_hint_y: None
+        height: dp(50)
+        font_size: '18sp'
+        on_press: app.converter()
+    
     Label:
-        id: result_label
-        text: "Resultado aparecerá aqui"
-        font_size: 20
-        halign: 'center'
+        id: output_label
+        text: 'Resultado:'
+        font_size: '20sp'
         size_hint_y: None
-        height: 50
+        height: dp(40)
+        halign: 'center'
+        valign: 'middle'
+    
+    Widget:  # Preenche o espaço restante para ajustar o layout
+        size_hint_y: 1

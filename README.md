@@ -38,7 +38,6 @@ Aqui estão algumas ideias para a evolução do projeto:
 
 - **Adicionar um histórico de conversões**: permitir que o usuário veja as últimas conversões realizadas.
 - **Funcionalidade de copiar o resultado**: adicionar um botão que permita ao usuário copiar o valor convertido para a área de transferência.
-- **Melhoria no design da interface**: aperfeiçoar o layout visual utilizando mais recursos de Kivy para uma experiência de usuário aprimorada.
 - **Implementar testes automatizados**: criar testes unitários para validar as funcionalidades da aplicação.
 - **Publicar uma versão web ou mobile**: adaptar o projeto para ser executado em um navegador ou como aplicativo mobile, utilizando Kivy ou frameworks de web.
 - **Adicionar opções de arredondamento**: permitir que o usuário escolha o número de casas decimais para o resultado.
