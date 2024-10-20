@@ -1,0 +1,41 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    Label:
+        id: menu_label
+        text: "Conversor Graus - Radianos"
+        font_size: 24
+        halign: 'center'
+        size_hint_y: None
+        height: 50
+
+    TextInput:
+        id: input_text
+        hint_text: "Digite o ângulo"
+        multiline: False
+        font_size: 20
+        size_hint_y: None
+        height: 40
+
+    BoxLayout:
+        size_hint_y: None
+        height: 50
+        spacing: 10
+
+        Button:
+            text: "Converter para Radianos"
+            on_press: app.opcao1()
+
+        Button:
+            text: "Converter para Graus"
+            on_press: app.opcao2()
+
+    Label:
+        id: result_label
+        text: "Resultado aparecerá aqui"
+        font_size: 20
+        halign: 'center'
+        size_hint_y: None
+        height: 50
