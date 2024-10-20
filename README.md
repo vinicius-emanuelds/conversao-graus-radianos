@@ -21,7 +21,7 @@ Este projeto foi desenvolvido a partir de uma atividade proposta na disciplina d
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu_usuario/conversor-graus-radianos.git
+   git clone https://github.com/vinicius-emanuelds/conversao-graus-radianos.git
    ```
 2. Instale as dependências necessárias:
    ```bash
